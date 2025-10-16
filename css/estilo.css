@@ -147,3 +147,39 @@
       gap: 0.5rem;
     }
   }
+
+  /*Animaçâo*/
+  .eletricista-animado {
+    width: 150px;
+    animation: piscar 1s infinite alternate;
+    margin: 0 auto;
+  }
+  
+  @keyframes piscar {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(1.05); }
+  }
+  
+
+  .eletricista-animado {
+    position: absolute; /* ou relative, fixed, sticky */
+    top: 100px;
+    left: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .eletricista-animado {
+      flex-direction: column;
+    }
+  
+    .eletricista-animado {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .eletricista-animado {
+      flex-direction: column;
+      gap: 0.5rem;
+      position: static;
+    }
+  }
